@@ -1,6 +1,13 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Home = () => {
+
+    const router = useRouter();
+    const handleRouting = () => {
+        console.log('This is a programmatic routing');
+        router.push('/product');
+    };
     return (
 
         <>
@@ -24,6 +31,8 @@ const Home = () => {
                 </a>
             </Link>
             <h1>Home Page</h1>
+            <button onClick={handleRouting}> Click me and go to product</button>
+
         </>
 
 
