@@ -15,19 +15,17 @@ const Blog = ({ blog }) => {
 export default Blog;
 
 export const getStaticPaths = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await response.json();
+    const paths = data.map((post) => {
+        return {
+            params: {
+                blogId: `${post.id}`
+            }
+        };
+    });
     return {
-        paths: [
-            {
-                params: { blogId: '1' }
-            },
-            {
-                params: { blogId: '2' }
-            },
-            {
-                params: { blogId: '3' }
-            },
-
-        ], fallback: false
+        paths, fallback: 'blocking'
     };
 };
 
