@@ -1,4 +1,12 @@
 {
+   "dashboard": {
+    "name": "John Doe",
+    "username": "johndoe123",
+    "likes": 100,
+    "post": 25,
+    "followers": 500,
+    "following": 250
+  },
   "product": [
     {
       "id": 1,
