@@ -2,7 +2,7 @@
   "product": [
     {
       "id": 1,
-      "price": 110.00,
+      "price": 100.00,
       "name": "Product 1",
       "body": "Description of Product 1"
     },
@@ -17,6 +17,26 @@
       "price": 150.00,
       "name": "Product 3",
       "body": "Description of Product 3"
+    }
+  ],
+   "articles": [
+    {
+      "id": 1,
+      "title": "Sample Article 1",
+      "body": "This is the body of the first article.",
+      "category": "Technology"
+    },
+    {
+      "id": 2,
+      "title": "Sample Article 2",
+      "body": "This is the body of the second article.",
+      "category": "Science"
+    },
+    {
+      "id": 3,
+      "title": "Sample Article 3",
+      "body": "This is the body of the third article.",
+      "category": "Technology"
     }
   ]
 }
