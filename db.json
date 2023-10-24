@@ -46,5 +46,78 @@
       "body": "This is the body of the third article.",
       "category": "Technology"
     }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "category": "Conference",
+      "date": "2023-10-20",
+      "body": "Description of Event 1"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "category": "Workshop",
+      "date": "2023-10-25",
+      "body": "Description of Event 2"
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "category": "Conference",
+      "date": "2023-11-02",
+      "body": "Description of Event 3"
+    },
+    {
+      "id": 4,
+      "title": "Event 4",
+      "category": "Seminar",
+      "date": "2023-11-10",
+      "body": "Description of Event 4"
+    },
+    {
+      "id": 5,
+      "title": "Event 5",
+      "category": "Workshop",
+      "date": "2023-11-18",
+      "body": "Description of Event 5"
+    },
+    {
+      "id": 6,
+      "title": "Event 6",
+      "category": "Conference",
+      "date": "2023-12-05",
+      "body": "Description of Event 6"
+    },
+    {
+      "id": 7,
+      "title": "Event 7",
+      "category": "Seminar",
+      "date": "2023-12-15",
+      "body": "Description of Event 7"
+    },
+    {
+      "id": 8,
+      "title": "Event 8",
+      "category": "Conference",
+      "date": "2023-12-21",
+      "body": "Description of Event 8"
+    },
+    {
+      "id": 9,
+      "title": "Event 9",
+      "category": "Seminar",
+      "date": "2024-01-08",
+      "body": "Description of Event 9"
+    },
+    {
+      "id": 10,
+      "title": "Event 10",
+      "category": "Seminar",
+      "date": "2024-01-16",
+      "body": "Description of Event 10"
+    }
   ]
+  
 }
