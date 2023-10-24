@@ -5,13 +5,13 @@ const Dashboard = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        async function fetchUserData() {
+        async function dashboardData() {
             const response = await fetch('http://localhost:4000/dashboard');
             const data = await response.json();
             setDashboardData(data);
             setIsLoading(false);
         }
-        fetchUserData();
+        dashboardData();
     }, []);
 
     if (isLoading) {

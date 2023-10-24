@@ -4,8 +4,8 @@
     "username": "johndoe123",
     "likes": 100,
     "post": 25,
-    "followers": 500,
-    "following": 250
+    "followers": 50,
+    "following": 2500
   },
   "product": [
     {
