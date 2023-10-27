@@ -1,0 +1,13 @@
+.header_container{
+    width: 100vw;
+    height: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+.footer_container{
+  margin-top: 300px;
+    
+}
