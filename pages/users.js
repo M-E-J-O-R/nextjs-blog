@@ -9,14 +9,17 @@ const UserList = ({ users }) => {
                     <p>email: {user.email}</p>
                 </div>
             )}
+
         </div>
     );
 };
 
 export default UserList;
-export const  getStaticProps = async () => {
+export const getStaticProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await response.json();
+    const user = process.env.DB_USER;
+    const password = process.env.DB_USER;
 
     return {
         props: {
