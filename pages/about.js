@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import Mejor from '/public/4 .jpg';
+import Mejor from '/public/4.jpg';
 
 const About = () => {
     return (
