@@ -35,7 +35,12 @@ const Home = () => {
                 </a>
             </Link>
             <br />
-            {(!session && status !== 'loading') && <Link Link href="api/auth/signin">
+            <Link href="/dashboard">
+                <a >Dashboard
+                </a>
+            </Link>
+            <br />
+            {(!session && status !== 'loading') && <Link Link href="api/auth/signin" className={status === 'loading' ? 'loading' : 'loaded'}>
                 <a onClick={(event) => {
                     event.preventDefault();
                     signIn();
@@ -44,7 +49,7 @@ const Home = () => {
             </Link >}
 
             <br />
-            {(session) && <Link href="api/auth/signout">
+            {(session) && <Link href="api/auth/signout" className={status === 'loading' ? 'loading' : 'loaded'}> 
                 <a onClick={(event) => {
                     event.preventDefault();
                     signOut();
