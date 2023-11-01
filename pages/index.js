@@ -4,11 +4,11 @@ import { signIn, signOut, useSession } from "next-auth/react";
 
 
 const Home = () => {
-    const { data: session, status, } = useSession();
+    const { data: session, status } = useSession();
     console.log({ session, status });
 
     const router = useRouter();
-    const handleRouting = () => {
+    const handleRouting = () => { 
         console.log('This is a programmatic routing');
         router.push('/product');
     };
@@ -43,7 +43,7 @@ const Home = () => {
             {(!session && status !== 'loading') && <Link Link href="api/auth/signin" className={status === 'loading' ? 'loading' : 'loaded'}>
                 <a onClick={(event) => {
                     event.preventDefault();
-                    signIn();
+                    signIn('github');
                 }}>Sign in
                 </a>
             </Link >}
@@ -60,6 +60,7 @@ const Home = () => {
             </Link>}
 
             <h1>Home Page</h1>
+            <h1>{ session? `Welcome ${session.user.name}`:''}</h1>
             <button onClick={handleRouting}> Click me and go to product</button>
 
         </>

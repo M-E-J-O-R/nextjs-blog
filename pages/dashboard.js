@@ -1,10 +1,10 @@
-import { getSession, signIn } from "next-auth/react";
+import { getSession, signIn, useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 const Dashboard = () => {
     const [dashboardData, setDashboardData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
-    const [sessionLoading, setSessionLoading] = useState(true);
+    const { status } = useSession();
 
 
     useEffect(() => {
@@ -16,18 +16,15 @@ const Dashboard = () => {
         }
         dashboardData();
 
-        async function securePage() {
-            const session = await getSession();
-            if (!session) {
-                signIn();
-            } else {
-                setSessionLoading(false);
+        function securePage() {
+            if (status === 'unauthenticated') {
+                signIn('github');
             }
         }
         securePage();
     }, []);
 
-    if ( sessionLoading) {
+    if (status === 'loading') {
         return <p>Loading....</p>
     }
 
