@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps,session }) {
   }
   return (
     <>
-      <SessionProvider session={session}>
+      <SessionProvider session={pageProps.session}>
         <Header />
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
         <Footer></Footer>
       </SessionProvider>
     </>);

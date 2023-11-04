@@ -59,8 +59,8 @@ const Home = () => {
                 </a>
             </Link>}
 
-            <h1>Home Page</h1>
-            <h1>{ session? `Welcome ${session.user.name}`:''}</h1>
+            <h1> {session ? `Welcome ${session.user.name} to ` : ''}Home Page</h1>
+          
             <button onClick={handleRouting}> Click me and go to product</button>
 
         </>
